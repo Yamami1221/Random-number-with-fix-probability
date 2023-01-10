@@ -48,7 +48,7 @@ int main() {
         a[j - 1]++;
     }
     for (int i = 0; i < N; i++) {
-        cout << "Num of " << i + 1 << ": " << a[i] << endl;
+        cout << "Count of num " << i + 1 << ": " << a[i] << endl;
     }
     return EXIT_SUCCESS;
 }
