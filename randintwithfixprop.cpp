@@ -6,9 +6,9 @@
 using namespace std;
 bool showprop = 1;
 
-double rannnnnnn(long long int N) {
-    double prop[N]={0};
-    double propforshow[N]={0};
+long double rannnnnnn(long long int N) {
+    long double prop[N]={0};
+    long double propforshow[N]={0};
     prop[N-1] = 1;
     propforshow[N-1] = 1;
     for (long long int i = N-2; i >= 0; i--) {
@@ -34,8 +34,8 @@ double rannnnnnn(long long int N) {
         showprop = 0;
     }
 
-    double iii = distribution(generator);
-    double ans;
+    long double iii = distribution(generator);
+    long double ans;
     for (long long int i = N - 1; i >= 0; i--) {
         if (iii < prop[i]) {
             ans = i + 1;
@@ -51,7 +51,7 @@ int main() {
         cout << "Pleses input N: ";
         cin >> N; 
     }while (N <= 1);
-    double a[N] = {0};
+    long double a[N] = {0};
     for (long long int i = 0; i < 10000000; i++){
         long long int j = rannnnnnn(N);
         a[j - 1]++;
